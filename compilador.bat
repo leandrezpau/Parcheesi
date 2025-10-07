@@ -21,3 +21,4 @@ cl.exe /c main.cc
 @echo ---------------------------------------------------
 @echo ----------------  Main Go File  -------------------
 cl.exe /oparcheesi.exe *.obj
+del *.obj
