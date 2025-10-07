@@ -1,4 +1,5 @@
 #pragma once
+
 #ifndef __PARCHEESI_H__
 #define __PARCHEESI_H__
 
@@ -37,4 +38,3 @@ struct Parcheesi{
 };
 
 #endif // __PARCHEESI_H_ 
-l

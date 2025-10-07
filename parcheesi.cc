@@ -79,7 +79,7 @@ MovementOutput Parcheesi::ApplyMovement(int pieceIndex, int roll_dice){
 
   if(CountPiecesOnBox(nextPosition) > 0){
     int friends = 0;
-    for(int i = 0; i < Parcheesi::player_.kPieceNum; i++){
+    for(int i = 0; i < Parcheesi::player_->kPieceNum; i++){
       if(Parcheesi::player_[current_player_].piece_[i].position == nextPosition){
         friends++;
       }
@@ -96,10 +96,11 @@ MovementOutput Parcheesi::ApplyMovement(int pieceIndex, int roll_dice){
   if(nextPosition == 68 + 8){
     return kMovementOutput_End;
   }
-  if(nextPosition == > 68 + 8){
+  if(nextPosition == 68 + 8){
     nextPosition = nextPosition - (nextPosition - (68 + 8));
     Parcheesi::player_[current_player_].piece_[pieceIndex].position = nextPosition;
     return kMovementOutput_BasicMove;
   }
-  
+
+  return kMovementOutput_BasicMove;
 }
