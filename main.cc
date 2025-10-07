@@ -4,6 +4,8 @@
 #include <time.h>
 
 #include "parcheesi.h"
+#include "player.h"
+#include "piece.h"
 
 int main(){
   Parcheesi parchis{4};  //Instancia
