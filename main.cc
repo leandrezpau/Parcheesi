@@ -1,4 +1,10 @@
 //#include porfa
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#include "parcheesi.h"
+
 int main(){
   Parcheesi parchis{4};  //Instancia
 
