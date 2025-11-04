@@ -28,13 +28,17 @@ class IParcheesi {
       IllegalMustBreakBridge,
     };
 
-    const static int board_size = 68;
+    // Types of boxes: 0 -> Home
+    // 1-68 -> normal board
+    // 69-75 -> exit path
+    // 76 -> End
     const static int all_boxes_board_size = 77;
+    const static int board_size = 68;
+
     const static int exit_size = 8;
     const static int null_piece = -1;
-    const static int pieces_per_player =4;
+    const static int pieces_per_player = 4;
 
-    virtual int CountPiecesOnBox(int box) const = 0;
     virtual int EntryBox(int player_index) const = 0;
     virtual int ExitBox(int player_index) const = 0;
     virtual int PiecesAtHome(int player_index) const = 0;

@@ -1,27 +1,23 @@
-//#include porfa
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-#include "parcheesi.h"
-#include "player.h"
-#include "piece.h"
+#include "PauParcheesi.h"
+#include "game.h"
+#include "windows.h"
+#include "aleJPlayer.h"
 
 int main(){
-  Parcheesi parchis{4};  //Instancia
+  system("chcp 65001");
+  PauParcheesi myp;
 
-  int entero_construido_con_parametros{1};
+  AlejPlayer player1;
+  AlejPlayer player2;
+  AlejPlayer player3;
 
-  srand(time(NULL));
+  const IPlayer* players[4]={&player1,&player2,&player3,nullptr};
+  Game g{myp,players};
 
- 
-  bool win = false;
-  do{
+  while(g.IsGameOver() == IParcheesi::Color::None){
+    g.PlayTurn();
+  }
 
-  }while(!win);
-
-  
   return 0;
 }
 
-    
