@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "run_compile_script",
+          "type": "shell",
+          "command": "sh ${workspaceFolder}/compile.sh",
+          "group": "build",
+          "problemMatcher": []
+      }
+  ]
+}
