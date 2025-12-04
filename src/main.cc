@@ -1,11 +1,12 @@
 #include "Pau_Parcheesi.h"
 #include "game.h"
+#include <windows.h>
 
 int main(){
-  //system("chcp 65001");
+  system("chcp 65001");
 
   PauParcheesi myp;
-
+  
   PauPlayer player1;
   PauPlayer player2;
   PauPlayer player3;
