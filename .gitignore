@@ -1,0 +1,5 @@
+build
+.vscode
+.vs
+tools/docs
+tools/Doxyfile
